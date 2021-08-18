@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    width: 100%;
+    min-height: 1vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;  
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    background-color: #343a40;
+}
+
+/* // HEADER STYLES*/
+.header {
+    width: 100%;
+}
+.header h1 {
+    text-align: center;
+    padding-bottom: 0;
+}
+.header #totalContacts {
+    text-align: center;
+    padding-top: 0;
+    
+}
+/*Icons for mobile view*/
+.icons {
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.mobile-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+.bx-plus {
+    padding-right: 0.5rem;
+}
+/* Elements only seen on desktop*/
+input {
+    width: 90%;
+    display: block;
+    padding: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    transition: all 0.5s ease-in-out;
+}
+div h3 {
+    padding-left: 1rem;
+    /*display: none;*/
+}
+.toggle-mobile {
+    transition: all 0.5s ease-in-out;
+    display: none;
+}
+/*New contact form*/
+form {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0.5rem;
+    text-align: center;
+    background: #d53369;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cbad6d, #d53369);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cbad6d, #d53369); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5%;
+}
+#fName,
+#lName {
+    width: 42%;
+}
+#fName {
+    float: left;
+    margin-left: 0.9rem;
+}
+form input {
+    margin-bottom: 0.5rem;
+}
+#save {
+    width: 30%;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+.list__header {
+    font-size: 1.4rem;
+    opacity: 0.7;
+     
+}
+#contacts .list__a .bxs-user-circle {
+    color: #dc3545;
+    font-size: 2rem;
+}
+#contacts .list__b .bxs-user-circle {
+    color: lightseagreen;
+    font-size: 2rem;
+}
+#contacts .list__c .bxs-user-circle {
+    color: lightpink;
+    font-size: 2rem;
+}
+#contacts .list__d .bxs-user-circle {
+    color: lightblue;
+    font-size: 2rem;
+}
+/*Phone numbers*/
+li a p {
+    opacity: 0.6;
+    font-size: 1rem;
+    padding-left: 2rem;
+    font-style: italic;
+}
+
+.list__item {
+    padding: 1rem;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    background: #283048;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10%;
+}
+
+
+
+/* // MEDIA QUERY*/
+@media screen and (min-width: 601px) {
+    .container {
+        width: 600px;
+    }
+}

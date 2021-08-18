@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    <!--Boxicon CDN-->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="css/filterable_phonebook.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class = "header">
+            <h1>Phone Book</h1>
+            <div id="totalContacts"></div>
+        
+            <div class="icons">
+                <i class='bx bx-plus mobile-icon'></i>
+                <i class='bx bx-search mobile-icon'></i>
+            </div>
+            <div class="toggle-mobile"><h3>New Contact</h3></div>
+            <input type="text" id="search__field" class="toggle-mobile" placeholder="Search Names ...">
+            <form action="" id="form" class="toggle-mobile">
+                <h4>New Contact</h4>
+                <input type="text" id="fName" placeholder="First Name">
+                <input type="text" id="lName" placeholder="Last Name">
+                <input type="number" id="pNum" placeholder="Mobile Number">
+                <input type="submit" id="save" value="Add">
+            </form>
+        </div>
+        
+
+        <div class = "section">
+            <ul id="contacts">
+                <li class="list__header">
+                    <h5>A</h5>
+                </li>
+                <li class="list__item list__a p">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Adam Price 
+                        <p>08167452245</p>
+                    </a>
+                </li>
+                <li class="list__item list__a">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Ade Benson
+                        <p>08167452245</p>
+                    </a>
+                </li>
+                <li class="list__item list__a">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Adams Ezeh
+                        <p>08167452245</p>
+                    </a>
+                </li>
+                <li class="list__header">
+                    <h5>B</h5>
+                </li>
+                <li class="list__item list__b">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Badeh Abiodun
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__b">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Ben Akachi
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__b">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Bill Gates
+                        <p>08083940166</p>
+                    </a>
+                </li>
+
+                <li class="list__header">
+                    <h5>C</h5>
+                </li>
+                <li class="list__item list__c">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Chidi Adeoti
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__c">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Charles Ebuka
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__c">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Charis School
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__c">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Chris Oluchi
+                        <p>08083940166</p>
+                    </a>
+                </li>
+
+                <li class="list__header">
+                    <h5>D</h5>
+                </li>
+                <li class="list__item list__d">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Dorothy Sunshine
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__d">
+                    <a>
+                        <i class='bx bxs-user-circle' type="solid"></i> Dammy Office
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__d">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Don Chucks
+                        <p>08083940166</p>
+                    </a>
+                </li>
+                <li class="list__item list__d">
+                    <a>
+                        <i class='bx bxs-user-circle'></i> Doro Akachi
+                        <p>08083940166</p>
+                    </a>
+                </li>
+            </ul>
+        
+        </div>
+    </div>
+
+    <script src="js/phonebook.js"></script>
+</body>
+</html>
